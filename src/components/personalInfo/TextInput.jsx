@@ -9,7 +9,7 @@ const TextInput = ({ label, placeholder }) => {
       </label>
       <br />
       <input
-        className="mt-2 w-full ring-1 rounded-md py-2 px-3 outline-none ring-purp"
+        className="mt-2 w-full ring-1 rounded-md py-2 px-3 outline-none ring-purp mb-8"
         type="text"
         id={label}
         placeholder={placeholder}
