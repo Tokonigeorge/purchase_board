@@ -4,9 +4,11 @@ import Nav from "./components/Nav";
 
 function App() {
   return (
-    <div className="App h-screen">
-      <p className="font-bold text-4xl text-purp">Complete your purchase</p>
-      <Nav />
+    <div className="App h-screen w-screen">
+      <div className="w-3/4 mx-auto lg:w-1/2 pt-24">
+        <p className="font-bold text-2xl text-purp">Complete your purchase</p>
+        <Nav />
+      </div>
     </div>
   );
 }
