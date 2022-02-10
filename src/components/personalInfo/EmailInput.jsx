@@ -11,7 +11,7 @@ const EmailInput = ({ placeholder }) => {
         The purchase reciept will be sent to this address
       </p>
       <input
-        className="mt-2 w-full ring-1 rounded-md py-2 px-3 outline-none ring-purp mb-8"
+        className="mt-2 w-full ring-1 rounded-md py-2 px-3 outline-none ring-purp mb-8 text-textgray"
         id="email-Address"
         type="email"
         placeholder={placeholder}

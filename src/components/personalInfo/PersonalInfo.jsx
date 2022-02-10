@@ -1,5 +1,7 @@
 import TextInput from "./TextInput";
 import EmailInput from "./EmailInput";
+import LocationInput from "./LocationInput";
+import PaymentButton from "../PaymentButton";
 
 const PersonalInfo = () => {
   return (
@@ -9,6 +11,8 @@ const PersonalInfo = () => {
         <EmailInput placeholder="OperaLinusAhmed@devmail.com" />
         <TextInput label="Address 1" />
         <TextInput label="Address 2" />
+        <LocationInput />
+        <PaymentButton />
       </form>
     </div>
   );
