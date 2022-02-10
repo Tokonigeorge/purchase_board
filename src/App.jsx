@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import PersonalInfo from "./components/personalInfo/PersonalInfo";
 import BillingInfo from "./components/billingInfo/BillingInfo";
 import Checkout from "./components/billingInfo/Checkout";
+import PaymentConfirmation from "./components/paymentConfirm/PaymentConfirmation";
 
 function App() {
   const [next, setNext] = useState(null);
@@ -23,12 +24,13 @@ function App() {
   };
   return (
     <div className="App min-h-screen w-screen">
-      <div className="w-3/4 mx-auto lg:w-1/2 pt-24">
-        <p className="font-bold text-2xl text-purp">Complete your purchase</p>
-        <Nav />
+      <div className="w-3/5 mx-auto lg:w-1/2 pt-24">
+        {/* <p className="font-bold text-2xl text-purp">Complete your purchase</p>
+        <Nav /> */}
         {/* <PersonalInfo handle={handleClick} /> */}
         {/* <BillingInfo /> */}
-        <Checkout checkoutData={checkoutData} />
+        {/* <Checkout checkoutData={checkoutData} /> */}
+        <PaymentConfirmation />
       </div>
     </div>
   );
