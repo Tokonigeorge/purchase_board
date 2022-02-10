@@ -14,7 +14,12 @@ const LocationInput = () => {
         <br />
         <select className="mt-2 w-full ring-1 rounded-md py-2 px-3 outline-none ring-purp mb-8 text-textgray">
           {states.map((i, indx) => (
-            <option value={i} label={i} key={`${i + indx}`}></option>
+            <option
+              value={i}
+              label={i}
+              key={`${i + indx}`}
+              className="py-2"
+            ></option>
           ))}
         </select>
       </div>

@@ -3,7 +3,7 @@ import EmailInput from "./EmailInput";
 import LocationInput from "./LocationInput";
 import PaymentButton from "../PaymentButton";
 
-const PersonalInfo = () => {
+const PersonalInfo = ({ handle }) => {
   return (
     <div className="mt-10">
       <form>
@@ -12,7 +12,7 @@ const PersonalInfo = () => {
         <TextInput label="Address 1" />
         <TextInput label="Address 2" />
         <LocationInput />
-        <PaymentButton />
+        <PaymentButton handle={handle} />
       </form>
     </div>
   );
