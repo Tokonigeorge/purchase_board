@@ -1,4 +1,5 @@
-import TextInput from "./TextInput";
+import TextInput from "../TextInput";
+import { Label } from "../TextInput";
 
 const LocationInput = () => {
   const states = ["Lagos", "Adamawa", "Bauchi", "Delta", "Ebonyi"];
@@ -8,11 +9,11 @@ const LocationInput = () => {
         <TextInput label="Local Government" />
       </div>
       <div className="w-2/5">
-        <label htmlFor="states" className="font-bold">
-          States
-        </label>
-        <br />
-        <select className="mt-2 w-full ring-1 rounded-md py-2 px-3 outline-none ring-purp mb-8 text-textgray">
+        <Label label="States" />
+        <select
+          id="States"
+          className="mt-2 w-full ring-1 rounded-md py-2 px-3 outline-none ring-purp mb-8 text-textgray"
+        >
           {states.map((i, indx) => (
             <option
               value={i}

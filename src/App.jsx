@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Nav from "./components/Nav";
 import PersonalInfo from "./components/personalInfo/PersonalInfo";
+import BillingInfo from "./components/billingInfo/BillingInfo";
 
 function App() {
   const [next, setNext] = useState(null);
@@ -14,7 +15,8 @@ function App() {
       <div className="w-3/4 mx-auto lg:w-1/2 pt-24">
         <p className="font-bold text-2xl text-purp">Complete your purchase</p>
         <Nav />
-        <PersonalInfo handle={handleClick} />
+        {/* <PersonalInfo handle={handleClick} /> */}
+        <BillingInfo />
       </div>
     </div>
   );

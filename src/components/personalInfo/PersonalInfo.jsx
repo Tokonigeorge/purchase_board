@@ -1,4 +1,4 @@
-import TextInput from "./TextInput";
+import TextInput from "../TextInput";
 import EmailInput from "./EmailInput";
 import LocationInput from "./LocationInput";
 import PaymentButton from "../PaymentButton";

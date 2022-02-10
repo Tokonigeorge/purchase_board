@@ -1,12 +1,12 @@
 import { useState } from "react";
+import { Label } from "../TextInput";
 
 const EmailInput = ({ placeholder }) => {
   const [email, setEmail] = useState("");
   return (
     <>
-      <label htmlFor="email-Address" className="font-bold">
-        Email Address <span className="text-midRed">*</span>
-      </label>
+      <Label label={"Email Address"} isNecessary={true} />
+
       <p className="text-sm text-lightBlue pb-1">
         The purchase reciept will be sent to this address
       </p>
