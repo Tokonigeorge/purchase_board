@@ -17,17 +17,18 @@ const TextInput = ({ label, placeholder, isNecessary }) => {
   );
 };
 
-export const textInputStyle = "mt-2 w-full ring-1 rounded-md py-2 px-3 outline-none ring-purp mb-8 text-textgray"
+export const textInputStyle =
+  "mt-2 w-full ring-1 rounded-md py-2.5 px-3 outline-none ring-purp mb-8 text-textgray text-sm";
 
 export const Label = ({ label, isNecessary }) => {
   return (
     <>
       {isNecessary ? (
-        <label htmlFor={label} className="font-bold">
+        <label htmlFor={label} className="font-bold text-sm">
           {label} <span className="text-midRed">*</span>
         </label>
       ) : (
-        <label htmlFor={label} className="font-bold">
+        <label htmlFor={label} className="font-bold text-sm">
           {label}
         </label>
       )}

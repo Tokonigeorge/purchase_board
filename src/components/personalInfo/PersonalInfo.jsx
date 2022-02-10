@@ -5,7 +5,7 @@ import PaymentButton from "../PaymentButton";
 
 const PersonalInfo = ({ handle }) => {
   return (
-    <div className="mt-10">
+    <div className="mt-8">
       <form>
         <TextInput label="Name" placeholder="Opara Linus Ahmed" />
         <EmailInput placeholder="OperaLinusAhmed@devmail.com" />
