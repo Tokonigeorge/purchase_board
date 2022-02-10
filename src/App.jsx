@@ -3,9 +3,20 @@ import "./App.css";
 import Nav from "./components/Nav";
 import PersonalInfo from "./components/personalInfo/PersonalInfo";
 import BillingInfo from "./components/billingInfo/BillingInfo";
+import Checkout from "./components/billingInfo/Checkout";
 
 function App() {
   const [next, setNext] = useState(null);
+  const checkoutData = [
+    {
+      item: "Data science and usability",
+      value: "50,000.00",
+    },
+    {
+      item: "Shipping",
+      value: "0.00",
+    },
+  ];
   console.log(next);
   const handleClick = () => {
     setNext("yyayy");
@@ -16,7 +27,8 @@ function App() {
         <p className="font-bold text-2xl text-purp">Complete your purchase</p>
         <Nav />
         {/* <PersonalInfo handle={handleClick} /> */}
-        <BillingInfo />
+        {/* <BillingInfo /> */}
+        <Checkout checkoutData={checkoutData} />
       </div>
     </div>
   );
