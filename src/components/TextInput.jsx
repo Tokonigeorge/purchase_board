@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 const TextInput = ({ label, placeholder, isNecessary }) => {
   const [value, setValue] = useState("");
@@ -7,6 +7,7 @@ const TextInput = ({ label, placeholder, isNecessary }) => {
       <Label label={label} isNecessary={isNecessary} />
       <input
         className={textInputStyle}
+        data-testid="text-input"
         type="text"
         id={label}
         placeholder={placeholder}

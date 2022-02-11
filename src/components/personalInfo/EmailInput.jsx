@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Label, textInputStyle } from "../TextInput";
 
 const EmailInput = ({ placeholder }) => {
@@ -14,10 +14,16 @@ const EmailInput = ({ placeholder }) => {
         className={textInputStyle}
         id="email-Address"
         type="email"
+        data-testid="email-input"
         placeholder={placeholder}
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
+      {email && !/\S+@\S+\.\S+/.test(email) && (
+        <span className="error" data-testid="error-msg">
+          Please enter a valid email.
+        </span>
+      )}
     </>
   );
 };

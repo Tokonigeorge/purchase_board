@@ -16,6 +16,7 @@ const BillingInfo = () => {
       setCardDetails(e.target.value);
     }
   };
+  //   if there is time, write tests for these input elements
 
   return (
     <div className="mt-8">

@@ -1,3 +1,4 @@
+import React from "react";
 import TextInput, { textInputStyle } from "../TextInput";
 import { Label } from "../TextInput";
 
@@ -10,7 +11,11 @@ const LocationInput = () => {
       </div>
       <div className="w-2/5">
         <Label label="States" />
-        <select id="States" className={textInputStyle}>
+        <select
+          id="States"
+          className={textInputStyle}
+          data-testid="select-input"
+        >
           {states.map((i, indx) => (
             <option
               value={i}
