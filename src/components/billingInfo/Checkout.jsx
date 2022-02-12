@@ -1,6 +1,6 @@
 import PaymentButton from "../PaymentButton";
 
-const Checkout = ({ checkoutData }) => {
+const Checkout = ({ checkoutData, handleNav, handleCancel }) => {
   return (
     <>
       <div className="w-full bg-white rounded-md my-12 pb-8 shadow-lg">
@@ -37,7 +37,7 @@ const Checkout = ({ checkoutData }) => {
           </p>
         </div>
       </div>
-      <PaymentButton />
+      <PaymentButton handleNav={handleNav} handleCancel={handleCancel} />
     </>
   );
 };

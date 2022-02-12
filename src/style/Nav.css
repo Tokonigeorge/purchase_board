@@ -3,15 +3,13 @@
   transition: color 0.5s;
 }
 
-.nav.active {
-}
-
 .nav::after {
   position: absolute;
   content: "";
-  height: 2px;
+  height: 6px;
   left: 0;
-  bottom: -10px;
+  bottom: -16px;
+  border-radius: 6px;
   background-color: transparent;
   width: 100%;
   transition: 0.25s;
@@ -24,10 +22,6 @@
   }
 } */
 
-/* .nav:hover::after {
-  background-color: #30363d;
-} */
-
 .nav.active::after {
-  background-color: #f78166;
+  background-color: #f2994a;
 }

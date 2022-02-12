@@ -20,9 +20,9 @@ const EmailInput = ({ placeholder }) => {
         onChange={(e) => setEmail(e.target.value)}
       />
       {email && !/\S+@\S+\.\S+/.test(email) && (
-        <span className="error" data-testid="error-msg">
+        <div className="text-sm mb-4 text-btnGradTwo" data-testid="error-msg">
           Please enter a valid email.
-        </span>
+        </div>
       )}
     </>
   );

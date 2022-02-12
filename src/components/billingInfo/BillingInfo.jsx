@@ -2,7 +2,7 @@ import { useState } from "react";
 import PaymentButton from "../PaymentButton";
 import TextInput, { Label, textInputStyle } from "../TextInput";
 
-const BillingInfo = () => {
+const BillingInfo = ({ handleNav, handleCancel }) => {
   const [cardDetails, setCardDetails] = useState("");
   const [options, setOptions] = useState("Visa");
 
@@ -75,7 +75,7 @@ const BillingInfo = () => {
             </div>
           </div>
         </div>
-        <PaymentButton />
+        <PaymentButton handleNav={handleNav} handleCancel={handleCancel} />
       </form>
     </div>
   );
