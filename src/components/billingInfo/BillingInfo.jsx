@@ -13,7 +13,7 @@ const BillingInfo = () => {
     //onsubmit validate if it's a correct visa or mastercard
     const reg = /^[0-9\b]+$/;
     if (e.target.value === "" || reg.test(e.target.value)) {
-      setCardDetails(e.target.value);
+      setCardDetails(e.target.value.match(/.{1,4}/g).join(" "));
     }
   };
   //   if there is time, write tests for these input elements
