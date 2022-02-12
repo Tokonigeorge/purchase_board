@@ -1,13 +1,13 @@
 const PaymentConfirmation = () => {
   return (
-    <div className="bg-white w-full rounded-md py-16 px-24">
+    <div className="bg-white w-full rounded-md mx-8 md:mx-0 py-8 px-12 md:py-16 md:px-24">
       <div className="shadow-2xl rounded-full w-12 h-12 flex justify-center items-center  m-auto">
         <span className="text-center">
           <CheckSvg />
         </span>
       </div>
-      <p className="text-purp font-bold text-4xl pt-2">Purchase Completed</p>
-      <p className="text-gray2 font-light text-sm pt-5 pr-16 mb-5">
+      <p className="text-purp font-bold text-3xl pt-2">Purchase Completed</p>
+      <p className="text-gray2 font-light text-sm pt-5 pr-12 mb-5">
         Please check your email for details concerning this transaction
       </p>
       <a href="#" className="text-btnGradOne underline text-sm">

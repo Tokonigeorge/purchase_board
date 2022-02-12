@@ -9,17 +9,11 @@ const BillingInfo = ({ handleNav, handleCancel }) => {
   const cards = ["Visa", "MasterCard", "Verve"];
 
   const validateDetails = (e) => {
-    // const reg = /^4[0-9]{12}(?:[0-9]{3})?$/;
-    //onsubmit validate if it's a correct visa or mastercard
-    const reg = /^[0-9\b]+$/;
-    if (e.target.value === "" || reg.test(e.target.value)) {
-      setCardDetails(e.target.value.match(/.{1,4}/g).join(" "));
-    }
+    setCardDetails(e.target.value);
   };
-  //   if there is time, write tests for these input elements
 
   return (
-    <div className="mt-8">
+    <div className="mt-10">
       <form>
         <TextInput
           label="Name on Card"
@@ -27,7 +21,12 @@ const BillingInfo = ({ handleNav, handleCancel }) => {
           placeholder="Opara Linus Ahmad"
         />
         <Label label={"Card Type"} isNecessary={true} />
-        <select id="Card Type" className={textInputStyle}>
+        <select
+          id="Card Type"
+          className={textInputStyle}
+          defaultValue={options}
+          onChange={(e) => setOptions(e.target.value)}
+        >
           {cards.map((i, indx) => (
             <option
               value={i}
@@ -49,7 +48,6 @@ const BillingInfo = ({ handleNav, handleCancel }) => {
               maxLength={20}
               autoComplete="cc-number"
               onChange={(e) => validateDetails(e)}
-              placeholder="44960 44960 44960 44960"
             />
           </div>
           <div className="w-full sm:w-1/2 flex flex-row items-stretch gap-x-12">

@@ -18,7 +18,9 @@ const EmailInput = ({ placeholder }) => {
         placeholder={placeholder}
         value={email}
         onChange={(e) => setEmail(e.target.value)}
+        autoComplete="true"
       />
+      {/* Check if the email is of avalid format */}
       {email && !/\S+@\S+\.\S+/.test(email) && (
         <div className="text-sm mb-4 text-btnGradTwo" data-testid="error-msg">
           Please enter a valid email.

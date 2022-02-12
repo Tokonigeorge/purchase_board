@@ -4,7 +4,7 @@ const Checkout = ({ checkoutData, handleNav, handleCancel }) => {
   return (
     <>
       <div className="w-full bg-white rounded-md my-12 pb-8 shadow-lg">
-        <div className="flex justify-between items-center px-12 py-2.5 bg-blueMain rounded-t-md text-white text-sm font-semi-bold">
+        <div className="flex justify-between items-center px-12 py-3.5 bg-blueMain rounded-t-md text-white text-sm font-semi-bold">
           <p>Item Name</p>
           <p>&#8358; Price</p>
         </div>
@@ -27,7 +27,7 @@ const Checkout = ({ checkoutData, handleNav, handleCancel }) => {
             );
           })}
         </div>
-        <div className="flex justify-between px-3 mx-9 py-2 ring-1 mt-8 rounded-md ring-lightBlue items-center text-sm">
+        <div className="flex justify-between px-3 mx-9 py-2 ring-1 mt-8 rounded-sm ring-lightBlue items-center text-sm">
           <p className="text-lightBlue">Total</p>
           <p className="font-bold text-purp">
             {checkoutData
@@ -37,7 +37,11 @@ const Checkout = ({ checkoutData, handleNav, handleCancel }) => {
           </p>
         </div>
       </div>
-      <PaymentButton handleNav={handleNav} handleCancel={handleCancel} />
+      <PaymentButton
+        handleNav={handleNav}
+        handleCancel={handleCancel}
+        text="Pay"
+      />
     </>
   );
 };
