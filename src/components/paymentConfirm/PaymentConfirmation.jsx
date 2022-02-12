@@ -1,3 +1,5 @@
+import React from "react";
+
 const PaymentConfirmation = () => {
   return (
     <div className="bg-white w-full rounded-md mx-8 md:mx-0 py-8 px-12 md:py-16 md:px-24">

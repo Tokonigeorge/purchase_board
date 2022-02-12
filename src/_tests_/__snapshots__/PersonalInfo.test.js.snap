@@ -1,0 +1,325 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It renders Sucessfully eventHandler called on click 1`] = `
+<div
+  className="mt-10"
+>
+  <form>
+    <label
+      className="font-bold text-sm"
+      htmlFor="Name"
+    >
+      Name
+    </label>
+    <br />
+    <input
+      className="mt-2 w-full ring-1 rounded-md py-2.5 px-3 outline-none ring-purp mb-8 text-textgray text-sm"
+      data-testid="text-input"
+      id="Name"
+      onChange={[Function]}
+      placeholder="Opara Linus Ahmed"
+      type="text"
+      value=""
+    />
+    <label
+      className="font-bold text-sm"
+      htmlFor="Email Address"
+    >
+      Email Address
+       
+      <span
+        className="text-midRed"
+      >
+        *
+      </span>
+    </label>
+    <br />
+    <p
+      className="text-sm text-lightBlue pb-1"
+    >
+      The purchase reciept will be sent to this address
+    </p>
+    <input
+      autoComplete="true"
+      className="mt-2 w-full ring-1 rounded-md py-2.5 px-3 outline-none ring-purp mb-8 text-textgray text-sm"
+      data-testid="email-input"
+      id="email-Address"
+      onChange={[Function]}
+      placeholder="OperaLinusAhmed@devmail.com"
+      type="email"
+      value=""
+    />
+    
+    <label
+      className="font-bold text-sm"
+      htmlFor="Address 1"
+    >
+      Address 1
+    </label>
+    <br />
+    <input
+      className="mt-2 w-full ring-1 rounded-md py-2.5 px-3 outline-none ring-purp mb-8 text-textgray text-sm"
+      data-testid="text-input"
+      id="Address 1"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <label
+      className="font-bold text-sm"
+      htmlFor="Address 2"
+    >
+      Address 2
+    </label>
+    <br />
+    <input
+      className="mt-2 w-full ring-1 rounded-md py-2.5 px-3 outline-none ring-purp mb-8 text-textgray text-sm"
+      data-testid="text-input"
+      id="Address 2"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <div
+      className="flex items-stretch gap-x-8"
+    >
+      <div
+        className="w-3/5"
+      >
+        <label
+          className="font-bold text-sm"
+          htmlFor="Local Government"
+        >
+          Local Government
+        </label>
+        <br />
+        <input
+          className="mt-2 w-full ring-1 rounded-md py-2.5 px-3 outline-none ring-purp mb-8 text-textgray text-sm"
+          data-testid="text-input"
+          id="Local Government"
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="w-2/5"
+      >
+        <label
+          className="font-bold text-sm"
+          htmlFor="States"
+        >
+          States
+        </label>
+        <br />
+        <select
+          className="mt-2 w-full ring-1 rounded-md py-2.5 px-3 outline-none ring-purp mb-8 text-textgray text-sm "
+          data-testid="select-input"
+          id="States"
+          onChange={[Function]}
+          value="Lagos"
+        >
+          <option
+            className="py-2"
+            label="Abia"
+            value="Abia"
+          />
+          <option
+            className="py-2"
+            label="Adamawa"
+            value="Adamawa"
+          />
+          <option
+            className="py-2"
+            label="Akwa Ibom"
+            value="Akwa Ibom"
+          />
+          <option
+            className="py-2"
+            label="Anambra"
+            value="Anambra"
+          />
+          <option
+            className="py-2"
+            label="Bauchi"
+            value="Bauchi"
+          />
+          <option
+            className="py-2"
+            label="Bayelsa"
+            value="Bayelsa"
+          />
+          <option
+            className="py-2"
+            label="Benue"
+            value="Benue"
+          />
+          <option
+            className="py-2"
+            label="Borno"
+            value="Borno"
+          />
+          <option
+            className="py-2"
+            label="Cross River"
+            value="Cross River"
+          />
+          <option
+            className="py-2"
+            label="Delta"
+            value="Delta"
+          />
+          <option
+            className="py-2"
+            label="Ebonyi"
+            value="Ebonyi"
+          />
+          <option
+            className="py-2"
+            label="Edo"
+            value="Edo"
+          />
+          <option
+            className="py-2"
+            label="Ekiti"
+            value="Ekiti"
+          />
+          <option
+            className="py-2"
+            label="Enugu"
+            value="Enugu"
+          />
+          <option
+            className="py-2"
+            label="Gombe"
+            value="Gombe"
+          />
+          <option
+            className="py-2"
+            label="Imo"
+            value="Imo"
+          />
+          <option
+            className="py-2"
+            label="Jigawa"
+            value="Jigawa"
+          />
+          <option
+            className="py-2"
+            label="Kaduna"
+            value="Kaduna"
+          />
+          <option
+            className="py-2"
+            label="Kano"
+            value="Kano"
+          />
+          <option
+            className="py-2"
+            label="Katsina"
+            value="Katsina"
+          />
+          <option
+            className="py-2"
+            label="Kebbi"
+            value="Kebbi"
+          />
+          <option
+            className="py-2"
+            label="Kogi"
+            value="Kogi"
+          />
+          <option
+            className="py-2"
+            label="Kwara"
+            value="Kwara"
+          />
+          <option
+            className="py-2"
+            label="Lagos"
+            value="Lagos"
+          />
+          <option
+            className="py-2"
+            label="Nasarawa"
+            value="Nasarawa"
+          />
+          <option
+            className="py-2"
+            label="Niger"
+            value="Niger"
+          />
+          <option
+            className="py-2"
+            label="Ogun"
+            value="Ogun"
+          />
+          <option
+            className="py-2"
+            label="Ondo"
+            value="Ondo"
+          />
+          <option
+            className="py-2"
+            label="Oyo"
+            value="Oyo"
+          />
+          <option
+            className="py-2"
+            label="Plateau"
+            value="Plateau"
+          />
+          <option
+            className="py-2"
+            label="Rivers"
+            value="Rivers"
+          />
+          <option
+            className="py-2"
+            label="Sokoto"
+            value="Sokoto"
+          />
+          <option
+            className="py-2"
+            label="Taraba"
+            value="Taraba"
+          />
+          <option
+            className="py-2"
+            label="Yobe"
+            value="Yobe"
+          />
+          <option
+            className="py-2"
+            label="Zamfara"
+            value="Zamfara"
+          />
+          <option
+            className="py-2"
+            label="Abuja"
+            value="Abuja"
+          />
+        </select>
+      </div>
+    </div>
+    <div
+      className="flex items-center gap-x-6 pb-24 mt-8"
+    >
+      <button
+        className="text-white bg-gradient-to-r from-btnGradOne to-btnGradTwo py-2.5 rounded-lg px-16 font-bold text-sm "
+        data-testid="test-btn"
+        onClick={[Function]}
+      >
+        Next
+      </button>
+      <button
+        className="text-purp pl-5 font-bold text-sm "
+        data-testid="test-btn"
+        onClick={[Function]}
+      >
+        Cancel Payment
+      </button>
+    </div>
+  </form>
+</div>
+`;

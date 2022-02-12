@@ -1,0 +1,168 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It renders Sucessfully eventHandler called on click 1`] = `
+<div
+  className="mt-10"
+>
+  <form>
+    <label
+      className="font-bold text-sm"
+      htmlFor="Name on Card"
+    >
+      Name on Card
+       
+      <span
+        className="text-midRed"
+      >
+        *
+      </span>
+    </label>
+    <br />
+    <input
+      className="mt-2 w-full ring-1 rounded-md py-2.5 px-3 outline-none ring-purp mb-8 text-textgray text-sm"
+      data-testid="text-input"
+      id="Name on Card"
+      onChange={[Function]}
+      placeholder="Opara Linus Ahmad"
+      type="text"
+      value=""
+    />
+    <label
+      className="font-bold text-sm"
+      htmlFor="Card Type"
+    >
+      Card Type
+       
+      <span
+        className="text-midRed"
+      >
+        *
+      </span>
+    </label>
+    <br />
+    <select
+      className="mt-2 w-full ring-1 rounded-md py-2.5 px-3 outline-none ring-purp mb-8 text-textgray text-sm"
+      defaultValue="Visa"
+      id="Card Type"
+      onChange={[Function]}
+    >
+      <option
+        className="py-2"
+        label="Visa"
+        value="Visa"
+      />
+      <option
+        className="py-2"
+        label="MasterCard"
+        value="MasterCard"
+      />
+      <option
+        className="py-2"
+        label="Verve"
+        value="Verve"
+      />
+    </select>
+    <div
+      className="flex-col flex sm:flex-row items-stretch w-full justify-between gap-x-12"
+    >
+      <div
+        className="w-full"
+      >
+        <label
+          className="font-bold text-sm"
+          htmlFor="Card Details"
+        >
+          Card Details
+           
+          <span
+            className="text-midRed"
+          >
+            *
+          </span>
+        </label>
+        <br />
+        <input
+          autoComplete="cc-number"
+          className="mt-2 w-full ring-1 rounded-md py-2.5 px-3 outline-none ring-purp mb-8 text-textgray text-sm"
+          id="Card Details"
+          inputMode="numeric"
+          maxLength={20}
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        className="w-full sm:w-1/2 flex flex-row items-stretch gap-x-12"
+      >
+        <div
+          className="w-20"
+        >
+          <label
+            className="font-bold text-sm"
+            htmlFor="Expiry Date"
+          >
+            Expiry Date
+             
+            <span
+              className="text-midRed"
+            >
+              *
+            </span>
+          </label>
+          <br />
+          <input
+            className="mt-2 w-full ring-1 rounded-md py-2.5 px-3 outline-none ring-purp mb-8 text-textgray text-sm"
+            id="Expiry Date"
+            maxLength={5}
+            placeholder="04/23"
+            type="text"
+          />
+        </div>
+        <div
+          className="w-12"
+        >
+          <label
+            className="font-bold text-sm"
+            htmlFor="CVV"
+          >
+            CVV
+             
+            <span
+              className="text-midRed"
+            >
+              *
+            </span>
+          </label>
+          <br />
+          <input
+            className="mt-2 w-full ring-1 rounded-md py-2.5 px-3 outline-none ring-purp mb-8 text-textgray text-sm text-black "
+            id="CVV"
+            maxLength={3}
+            placeholder="923"
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="flex items-center gap-x-6 pb-24 mt-8"
+    >
+      <button
+        className="text-white bg-gradient-to-r from-btnGradOne to-btnGradTwo py-2.5 rounded-lg px-16 font-bold text-sm "
+        data-testid="test-btn"
+        onClick={[Function]}
+      >
+        Next
+      </button>
+      <button
+        className="text-purp pl-5 font-bold text-sm "
+        data-testid="test-btn"
+        onClick={[Function]}
+      >
+        Cancel Payment
+      </button>
+    </div>
+  </form>
+</div>
+`;

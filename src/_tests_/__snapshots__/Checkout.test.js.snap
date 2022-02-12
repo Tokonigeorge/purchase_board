@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It renders Sucessfully eventHandler called on click 1`] = `
+Array [
+  <div
+    className="w-full bg-white rounded-md my-12 pb-8 shadow-lg"
+  >
+    <div
+      className="flex justify-between items-center px-12 py-3.5 bg-blueMain rounded-t-md text-white text-sm font-semi-bold"
+    >
+      <p>
+        Item Name
+      </p>
+      <p>
+        ₦ Price
+      </p>
+    </div>
+    <div
+      className="mt-6 text-purp text-sm font-light pb-6 mx-6 px-6 border-b border-lightBlue"
+    >
+      <div
+        className="flex justify-between items-center pt-7 "
+      >
+        <p>
+          Data science and usability
+        </p>
+        <p
+          className="false"
+        >
+          50,000.00
+        </p>
+      </div>
+      <div
+        className="flex justify-between items-center pt-7 "
+      >
+        <p>
+          Shipping
+        </p>
+        <p
+          className="text-black font-bold"
+        >
+          0.00
+        </p>
+      </div>
+    </div>
+    <div
+      className="flex justify-between px-3 mx-9 py-2 ring-1 mt-8 rounded-sm ring-lightBlue items-center text-sm"
+    >
+      <p
+        className="text-lightBlue"
+      >
+        Total
+      </p>
+      <p
+        className="font-bold text-purp"
+      >
+        50000.00
+      </p>
+    </div>
+  </div>,
+  <div
+    className="flex items-center gap-x-6 pb-24 mt-8"
+  >
+    <button
+      className="text-white bg-gradient-to-r from-btnGradOne to-btnGradTwo py-2.5 rounded-lg px-16 font-bold text-sm "
+      data-testid="test-btn"
+      onClick={[Function]}
+    >
+      Pay
+    </button>
+    <button
+      className="text-purp pl-5 font-bold text-sm "
+      data-testid="test-btn"
+      onClick={[Function]}
+    >
+      Cancel Payment
+    </button>
+  </div>,
+]
+`;

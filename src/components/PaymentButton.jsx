@@ -1,3 +1,4 @@
+import React from "react";
 const PaymentButton = ({ handleNav, handleCancel, text }) => {
   return (
     <div className="flex items-center gap-x-6 pb-24 mt-8">
@@ -17,7 +18,11 @@ const PaymentButton = ({ handleNav, handleCancel, text }) => {
 
 const Button = ({ style, text, click }) => {
   return (
-    <button className={`${style} font-bold text-sm `} onClick={(e) => click(e)}>
+    <button
+      data-testid="test-btn"
+      className={`${style} font-bold text-sm `}
+      onClick={(e) => click(e)}
+    >
       {text}
     </button>
   );

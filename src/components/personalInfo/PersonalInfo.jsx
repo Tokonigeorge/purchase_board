@@ -1,3 +1,4 @@
+import React from "react";
 import TextInput from "../TextInput";
 import EmailInput from "./EmailInput";
 import LocationInput from "./LocationInput";

@@ -1,3 +1,4 @@
+import React from "react";
 import PaymentButton from "../PaymentButton";
 
 const Checkout = ({ checkoutData, handleNav, handleCancel }) => {
@@ -30,6 +31,7 @@ const Checkout = ({ checkoutData, handleNav, handleCancel }) => {
         <div className="flex justify-between px-3 mx-9 py-2 ring-1 mt-8 rounded-sm ring-lightBlue items-center text-sm">
           <p className="text-lightBlue">Total</p>
           <p className="font-bold text-purp">
+            {/* Replace comma with empty string, map Number value to array and sum */}
             {checkoutData
               .map((i) => Number(i.value.replace(/,/g, "")))
               .reduce((a, b) => a + b, 0)

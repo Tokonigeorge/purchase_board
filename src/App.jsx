@@ -12,7 +12,6 @@ function App() {
   const [navEl, setNavEl] = useState(1);
   const [cancel, setCancel] = useState(false);
 
-  console.log(navEl);
   const handleNav = (e) => {
     e.preventDefault();
     setNavEl((prev) => prev + 1);
