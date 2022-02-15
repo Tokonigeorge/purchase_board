@@ -8,7 +8,7 @@ Purchase board is an application for processing payment purchase.
 This project was done with:
 1. ReactJs Vite
 2. TailwindCss
-3. react-testing-library and react-testing-library/js-dom for testing.
+3. react-testing-library, Jest and user-event for testing.
 
 ## Installation and setup
 Clone down this repository. You will need `node` and `npm` installed globally on your machine.  
